@@ -1,5 +1,12 @@
 import { Component } from 'react'
+import WebFont from 'webfontloader'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
+
+WebFont.load({
+  google: {
+    families: ['Lato']
+  }
+})
 
 class App extends Component {
 

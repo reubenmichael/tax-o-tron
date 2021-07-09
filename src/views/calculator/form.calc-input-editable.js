@@ -48,7 +48,7 @@ class Form extends Component {
                         </TextField>
                     </Grid>
                     <Grid item>
-                        <TextField required={true} id="select-tax-year" select label="Tax Year" name="taxYear" helperText="Select and income year" variant="outlined" value={this.state.taxYear} onChange={this.handleChange} >
+                        <TextField required={true} id="select-tax-year" select label="Tax Year" name="taxYear" helperText="Select an income year" variant="outlined" value={this.state.taxYear} onChange={this.handleChange} >
                             {taxYear.map((option) => (
                                 <MenuItem key={option.value} value={option.value}>
                                     {option.value}

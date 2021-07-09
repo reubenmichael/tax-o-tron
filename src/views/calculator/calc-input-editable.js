@@ -9,7 +9,7 @@ class CalcInput extends Component {
                 <Typography variant="h4">
                     Calculate your tax
                 </Typography>
-                <Form />
+                <Form country={this.props.country} taxYear={this.props.taxYear} taxableIncome={this.props.taxableIncome} handleSubmit={this.props.handleSubmit} />
             </Fragment>
         )
     }

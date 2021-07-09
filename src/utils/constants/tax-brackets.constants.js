@@ -45,3 +45,5 @@ const taxBrackets = {
         ]
     }
 }
+
+export default taxBrackets

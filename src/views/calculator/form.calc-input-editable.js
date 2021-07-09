@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 import { TextField, MenuItem, Button, Grid } from '@material-ui/core'
 import { Alert } from '@material-ui/lab'
 import countries from '../../utils/constants/countries.constants'

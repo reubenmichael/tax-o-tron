@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 import WebFont from 'webfontloader'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import CalculatorView from './views/calculator'
@@ -17,7 +17,7 @@ class App extends Component {
     country: 'Australia',
     taxYear: 2021,
     taxableIncome: Number(70000),
-    taxBrackets: taxBracketsAll.Australia[2020]
+    taxBrackets: taxBracketsAll.Australia[202]
   }
 
   handleSubmit = formContents => {

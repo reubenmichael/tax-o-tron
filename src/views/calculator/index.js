@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 import StructureTwoColumns from '../../components/structure/twocolumns.structure'
 import Title from './title'
 import CalcInputEditable from './calc-input-editable'

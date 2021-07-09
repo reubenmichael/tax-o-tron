@@ -1,3 +1,4 @@
+import React from 'react'
 import { TextField, Grid } from '@material-ui/core'
 // import reductionAmountsCalculation from '../../utils/helpers/reduction-amounts-calculation'
 import bracketAmountsCalculation from '../../utils/helpers/bracket-amounts-calculation'

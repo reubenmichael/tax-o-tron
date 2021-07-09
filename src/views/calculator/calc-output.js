@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Typography, Grid } from '@material-ui/core'
 import TaxOnTaxableIncomeCalcOutput from './tax-on-taxable-income.calc-output'
 import BracketsCalcOutput from './brackets.calc-output'

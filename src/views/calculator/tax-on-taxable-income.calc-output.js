@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { TextField } from '@material-ui/core'
 import reductionAmountsCalculation from '../../utils/helpers/reduction-amounts-calculation'
 import taxOnTaxableIncomeCalculation from '../../utils/helpers/tax-on-taxable-income-calculation'

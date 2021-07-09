@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import WebFont from 'webfontloader'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
+import CalculatorView from './views/calculator'
 
 WebFont.load({
   google: {
@@ -18,6 +19,7 @@ class App extends Component {
             <Redirect to="/calculator" />
           </Route>
           <Route exact path="/calculator">
+            <CalculatorView />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -11,20 +11,20 @@ const twoColumnStructure = (props) => {
         <Grid container spacing={2}>
             <Grid item xs={12} md={6} key="bucket1">
                 {buckets['1'].map((component, index) => 
-                <React.Fragment>
+                <Fragment>
                     <div key={index}>
                         {component}
                     </div>
-                </React.Fragment>
+                </Fragment>
                 )}
             </Grid>
             <Grid item xs={12} md={6} key="bucket2">
             {buckets['2'].map((component, index) => 
-                <React.Fragment>
+                <Fragment>
                     <div key={index}>
                         {component}
                     </div>
-                </React.Fragment>
+                </Fragment>
                 )}
             </Grid>
         </Grid>

@@ -1,9 +1,9 @@
 
-export default reductionAmountsCalculation = (taxBrackets) => {
+const reductionAmountsCalculation = (taxBrackets) => {
     let reductionAmounts = []
     for (let i = 0; i < taxBrackets.length; i++) {
         
-        const thisTaxRate = taxBrackes[i][1]
+        const thisTaxRate = taxBrackets[i][1]
         const previousTaxRate = taxBrackets[i-1] ? taxBrackets[i-1][1] : 0
         const previousUpperLimit = taxBrackets[i-1] ? taxBrackets[i-1][0] : 0
         const previousReductionAmount = reductionAmounts[i-1] ? reductionAmounts[i-1] : 0
@@ -15,3 +15,5 @@ export default reductionAmountsCalculation = (taxBrackets) => {
     }
     return reductionAmounts
 }
+
+export default reductionAmountsCalculation

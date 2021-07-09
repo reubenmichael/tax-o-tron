@@ -1,5 +1,5 @@
 
-export default taxOnTaxableIncomeCalculation = (taxableIncome, taxBrackets, reductionAmounts) => {
+const taxOnTaxableIncomeCalculation = (taxableIncome, taxBrackets, reductionAmounts) => {
     let taxOnTaxableIncome = null
     for (let i = 0; i < taxBrackets.length; i++) {
         const upperLimit = taxBrackets[i][0]
@@ -14,3 +14,5 @@ export default taxOnTaxableIncomeCalculation = (taxableIncome, taxBrackets, redu
     }
     return taxOnTaxableIncome
 }
+
+export default taxOnTaxableIncomeCalculation

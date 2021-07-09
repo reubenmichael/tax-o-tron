@@ -9,7 +9,7 @@ const CalculatorView = (props) => {
     return (
         <Fragment>
             <StructureTwoColumns bucket1={[<Title />]} bucket2={[<CalcInputEditable country={props.country} taxYear={props.taxYear} taxableIncome={props.taxableIncome} handleSubmit={props.handleSubmit} />]} />
-            <StructureTwoColumns bucket1={[<CalcInputUneditable />]} bucket2={[<CalcOutput />]} />
+            <StructureTwoColumns bucket1={[<CalcInputUneditable />]} bucket2={[<CalcOutput country={props.country} taxYear={props.taxYear} taxableIncome={props.taxableIncome} taxBrackets={props.taxBrackets} />]} />
         </Fragment>
     )
 }

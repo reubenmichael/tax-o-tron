@@ -13,16 +13,16 @@ const CalcOutput = (props) => {
                     </Typography>
                 </Grid>
                 <Grid item>
-                    <TaxOnTaxableIncomeCalcOutput />
+                    <TaxOnTaxableIncomeCalcOutput taxableIncome={props.taxableIncome} taxBrackets={props.taxBrackets} />
                 </Grid>
                 <Grid item>
                     <Typography variant="h6">
                         Breakdown:
                     </Typography>
                 </Grid>
-                <Grid item>
-                    <BracketsCalcOutput />
-                </Grid>
+                <Fragment>
+                    <BracketsCalcOutput taxableIncome={props.taxableIncome} taxBrackets={props.taxBrackets} />
+                </Fragment>
             </Grid>
         </Fragment>
     )

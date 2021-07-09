@@ -1,5 +1,5 @@
 
-export default bracketAmountsCalculation = (taxableIncome, taxBrackets, reductionAmounts) => {
+const bracketAmountsCalculation = (taxableIncome, taxBrackets) => {
     let bracketAmounts = []
     let thisBracketAmount = 0
     for (let i = 0; i < taxBrackets.length; i++) {
@@ -23,3 +23,5 @@ export default bracketAmountsCalculation = (taxableIncome, taxBrackets, reductio
     }
     return bracketAmounts
 }
+
+export default bracketAmountsCalculation

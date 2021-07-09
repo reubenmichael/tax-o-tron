@@ -43,7 +43,7 @@ class App extends Component {
             <Redirect to="/calculator" />
           </Route>
           <Route exact path="/calculator">
-            <CalculatorView country={country} taxYear={taxYear} taxableIncome={taxableIncome} taxBrackes={taxBrackets} handleSubmit={this.handleSubmit}/>
+            <CalculatorView country={country} taxYear={taxYear} taxableIncome={taxableIncome} taxBrackets={taxBrackets} handleSubmit={this.handleSubmit}/>
           </Route>
         </Switch>
       </BrowserRouter>
@@ -51,7 +51,5 @@ class App extends Component {
   }
 
 }
-
-
 
 export default App

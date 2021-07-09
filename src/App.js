@@ -14,10 +14,23 @@ class App extends Component {
 
   // Set default state
   state = {
-    country:'Australia',
+    country: 'Australia',
     taxYear: 2020,
     taxableIncome: Number(70000),
     taxBrackets: taxBracketsAll.Australia[2020]
+  }
+
+  handleSubmit = formContents => {
+    let country = formContents.country
+    let taxYear = formContents.taxYear
+    let taxableIncome = formContents.taxableIncome
+    let taxBrackets = taxBracketsAll[country][taxYear]
+    this.setState({
+      country: country,
+      taxYear: taxYear,
+      taxableIncome: taxableIncome,
+      taxBrackets: taxBrackets
+    })
   }
 
   render () {
@@ -30,7 +43,7 @@ class App extends Component {
             <Redirect to="/calculator" />
           </Route>
           <Route exact path="/calculator">
-            <CalculatorView country={country} taxYear={taxYear} taxableIncome={taxableIncome} taxBrackes={taxBrackets} />
+            <CalculatorView country={country} taxYear={taxYear} taxableIncome={taxableIncome} taxBrackes={taxBrackets} handleSubmit={this.handleSubmit}/>
           </Route>
         </Switch>
       </BrowserRouter>

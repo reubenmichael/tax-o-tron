@@ -17,7 +17,7 @@ class App extends Component {
     country: 'Australia',
     taxYear: 2021,
     taxableIncome: Number(70000),
-    taxBrackets: taxBracketsAll.Australia[202]
+    taxBrackets: taxBracketsAll.Australia[2021]
   }
 
   handleSubmit = formContents => {

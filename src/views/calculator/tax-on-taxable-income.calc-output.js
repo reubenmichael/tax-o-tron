@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { TextField } from '@material-ui/core'
 
-export default TaxOnTaxableIncome = (props) => {
+const TaxOnTaxableIncome = (props) => {
     
     return (
         <Fragment>
@@ -9,3 +9,5 @@ export default TaxOnTaxableIncome = (props) => {
         </Fragment>
     )
 }
+
+export default TaxOnTaxableIncome

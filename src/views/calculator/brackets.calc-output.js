@@ -1,6 +1,7 @@
-import { Grid, TextField } from '@material-ui/core'
+import { Fragment } from 'react'
+import { TextField } from '@material-ui/core'
 
-export default Brackets = (props) => {
+const Brackets = (props) => {
 
     return (
         <Fragment>
@@ -8,3 +9,5 @@ export default Brackets = (props) => {
         </Fragment>
     )
 }
+
+export default Brackets

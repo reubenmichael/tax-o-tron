@@ -15,7 +15,7 @@ class App extends Component {
   // Set default state
   state = {
     country: 'Australia',
-    taxYear: 2020,
+    taxYear: 2021,
     taxableIncome: Number(70000),
     taxBrackets: taxBracketsAll.Australia[2020]
   }
